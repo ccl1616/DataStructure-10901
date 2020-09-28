@@ -1,5 +1,6 @@
 #include <iostream>
 #define n 8
+// to count the time complexity
 
 int nums[n] = {7,3,1,2,6,8,4,5};
 
