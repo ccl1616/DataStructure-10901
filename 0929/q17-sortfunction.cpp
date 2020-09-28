@@ -25,6 +25,7 @@ class employee{
 		}
 };
 
+// to-do
 bool salaryComparison(employee lhs, employee rhs)
 {
     return lhs.getSalary() < rhs.getSalary();
