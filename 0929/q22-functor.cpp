@@ -8,13 +8,16 @@ class A{
     private:
         int add;
     public:
+        // A(val) would call this and this is constructor
         A(int val){
             cout << "initialize\n";
             add = val;
         }
+
+        // this function is write for for_each function
         void operator()(int ori){
             cout << "operator overload\n";
-            cout << ori+add << " ";
+            cout << ori+add << " " << endl;
         }
 
 }; 
