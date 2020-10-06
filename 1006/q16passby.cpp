@@ -1,3 +1,4 @@
+// pass by parameter or address
 #include <iostream>
 using namespace std;
 
