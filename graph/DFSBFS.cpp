@@ -62,7 +62,7 @@ void Graph::DFSVisit(int vertex, int &time){   // 一旦有vertex被發現而且
     discover[vertex] = ++time;                 // 更新vertex的discover時間
     // iterator 寫法!!!!
     for (std::list<int>::iterator itr = AdjList[vertex].begin();   // for loop參數太長
-         itr != AdjList[vertex].end(); itr++) {                    // 分成兩段
+        itr != AdjList[vertex].end(); itr++) {                    // 分成兩段
         if (color[*itr] == 0) {                // 若搜尋到白色的vertex
             predecessor[*itr] = vertex;        // 更新其predecessor
             DFSVisit(*itr, time);              // 立刻以其作為新的搜尋起點, 進入新的DFSVisit()
@@ -112,7 +112,7 @@ int main(){
     g2.AddEdgeList(6, 4);g2.AddEdgeList(6, 7);
     g2.AddEdgeList(7, 6);
 
-    g2.BFS(0);    // 以vertex(0), 也就是vertex(A作為DFS()的起點
+    g2.DFS(0);    // 以vertex(0), 也就是vertex(A作為DFS()的起點
 
     return 0;
 }
